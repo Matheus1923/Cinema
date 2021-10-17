@@ -15,5 +15,10 @@ namespace CinemaMat.Models
         {
 
         }
+
+        internal Task GetIngressos()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

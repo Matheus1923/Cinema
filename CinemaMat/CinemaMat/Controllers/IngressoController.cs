@@ -25,14 +25,14 @@ namespace CinemaMat.Controllers
             return Contexto.Ingressos.ToList();
         }
 
-        [HttpGet("id")]
+        [HttpGet("{id}")]
 
         public Ingresso Get(int id)
         {
             return Contexto.Ingressos.First(e => e.IdIngresso == id);
         }
 
-        [HttpGet("id/{id}")]
+        [HttpGet("idingresso/{idingresso}")]
         public List<Ingresso> Filtrar(int id)
         {
             return Contexto.Ingressos.Where(e => e.IdIngresso == id).ToList();
